@@ -1,0 +1,78 @@
+.container
+{
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    
+}
+
+ul
+{
+list-style-type: none;
+
+}
+.phone_email li
+{
+    padding-left: 210px;
+}
+.container
+{
+    display: flex;
+    
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+.work
+{
+    line-height: 30px;
+    margin: 10px;
+}
+.edu
+{
+    line-height: 30px;
+    margin: 10px;
+}
+.Tech
+{
+    line-height: 30px;
+    margin: 10px;
+   
+}
+
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
