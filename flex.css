@@ -154,3 +154,57 @@
     margin-right: auto;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;  /*--align-items works on cross axis (opposite main axis.here main axis is x as flex-direction row--*/
+}
+
+.container
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+/*--difference between--*justify-content and align-content--*/
+.container{
+
+    display: flex;
+    justify-content: row;
+    align-items: center;
+
+}
+
+.container
+{
+    display: flex;
+    justify-content: row;
+    flex: wrap;
+    height: 600px;
+    align-content: center;
+}
+
+
+/*--order--*/
+
+.container
+{
+    display: flex;
+}
+.item-1{order: 1;}
+.item-2{order: 2;}
+.item-3{order: 3;}
+.item-4{order: 4;}
