@@ -194,17 +194,121 @@
     justify-content: row;
     flex: wrap;
     height: 600px;
+    
     align-content: center;
+
 }
 
+/*short hand property of flex-direction and flex-wrap
+.container
+{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    align-content: center;
 
-/*--order--*/
+}
+similaar to
+*/
+.container
+{
+    display: flex;
+    flex-flow: row wrap;
+   
+}
 
 .container
 {
     display: flex;
+    flex-flow: row wrap-reverse;
 }
-.item-1{order: 1;}
-.item-2{order: 2;}
-.item-3{order: 3;}
-.item-4{order: 4;}
+
+/*wrapping row direction column*/
+.container
+{
+    display: flex;      /*flexwrap not working*/
+    height:200px;
+    flex-flow: column wrap;
+}
+
+
+.container
+{
+    display: flex;
+    flex-direction: column; /*output same as above*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--row-gap column-gap used to make gap between rows/columns after shrinking the website
+.container
+{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+--*/
+.container
+{
+    display: flex;
+    flex-direction: row;
+
+   
+}
+/*--to evenly distrubute the sizing of each item and if value given higher for  a particular item more size given to the item*--
+.flex-item
+{
+    flex-grow: 1;
+}
+
+
+.item-4
+{
+    flex-grow: 4; /*default value is 0
+}
+*/
+.flex-item
+{
+    width: 100px;
+}
+
+.item-4
+{
+    flex-shrink: 2; /*--not working--*/
+}
+
+/*--setting width of a particular item--*/
+
+.item-4{
+    flex-basis: 200px;
+
+}
+
+/*--short hand property of flex--*/
+
+.item-3{
+    flex: 1 0 300px;
+}
+
+.item-2{
+    flex: 0 1 100px; /*--flexgrow flexshrink flexbasis--*/
+}
+
+/*--align-self--*/
+
+.container{
+    display: flex;
+    height: 500px;
+    align-items: stretch; /*--stretch used to stretch items in cross axis--*/
+}
+
+.item-1
+{
+    align-self: auto;  /*--same as align-items take value as in align-item if mentioned auto*/
+}
+
+.item-2{
+    align-self: space-around;
+}
