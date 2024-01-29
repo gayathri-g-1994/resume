@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*--to remove unwanted spaces--*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    
+    font-family: "Noto Sans", sans-serif;
+    
+}
+
+.main
+{
+    background-color: #A9B1B4;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card
+{
+
+    
+    width: 750px;
+    height: 300px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 5px; /*but only 2 sides of card becomes round hence img given border-radius*/
+    display: flex; /*for displaying contents inline but img size reduced hence min-width used */
+    
+}
+
+.img-holder
+{
+ min-width: 350px;
+ height: 100%;  
+ 
+
+}
+
+
+
+img
+{
+    width: 100%;
+    height: 100%;  /* takes the size of parent class i.e img-holder */
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content
+{
+    padding: 25px 20px; /*--topbottom leftright--*/
+}
